@@ -50,7 +50,7 @@ primarydata <- clean_names(primarydata)
 
 
 # YOUR TURN:
-# Write the command to show you the new, cleaned up column names
+# Finish the command below to see the new, cleaned up column names
 
 glimpse()
 
