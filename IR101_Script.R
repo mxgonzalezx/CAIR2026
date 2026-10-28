@@ -52,7 +52,7 @@ primarydata <- clean_names(primarydata)
 # YOUR TURN:
 # Write the command to show you the new, cleaned up column names
 
-glimpse(primarydata)
+glimpse()
 
 
 #################################################
@@ -168,9 +168,10 @@ subset3 <- primarydata %>%
   arrange(desc(age))
 
 # YOUR TURN:
-# Write a command that selects stid, major, sex, all sat scores
+# Write a command that selects stid, major, sex, all sat variables
 # filters for female students
 # and sorts sat_verb in descending order
+# and save it as subset4
 
 
 
@@ -201,4 +202,4 @@ primarydata %>%
   )
 
 # Practice:
-# Using the example above, create a chart showing students by gender
+# Using the example above, create a chart showing students by pell recipient status
