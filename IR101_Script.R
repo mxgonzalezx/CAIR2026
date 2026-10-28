@@ -185,20 +185,20 @@ subset3 <- primarydata %>%
 # QUICK VISUALIZATION
 #################################################
 
-primarydata %>%
-  count(ethnicity) %>%
-  ggplot(
+primarydata %>%  #Start with your primary dataset
+  count(ethnicity) %>% #Count how many students are within each ethnicity
+  ggplot( #Begin creating a graph
     aes(
-      x = reorder(ethnicity, n),
-      y = n
+      x = reorder(ethnicity, n), #Place ethnicity on the x-axis and sort by count
+      y = n #Place the counts (number of students) on the y-axis
     )
   ) +
-  geom_col() +
-  coord_flip() +
+  geom_col() + #Create a bar chart
+  coord_flip() + # Flip the chart so the bars are horizontal
   labs(
-    title = "Students by Ethnicity",
-    x = "Ethnicity",
-    y = "Number of Students"
+    title = "Students by Ethnicity", #Add a title to the chart
+    x = "Ethnicity", #Name the x-axis Ethnicity
+    y = "Number of Students" #Name the y-axis Number of Students
   )
 
 # Practice:
